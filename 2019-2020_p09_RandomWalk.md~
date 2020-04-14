@@ -62,28 +62,26 @@ En el desarrollo de la aplicación que se propone, aplique el
 iterando las fases que se definen metodología:
 Red - Green - Refactor - [Integrate] y escribiendo la documentación de la misma al mismo tiempo que desarrolla el código.
 
-### Especificacones de la aplicación Random Walk
-En esta práctica se propone desarrollar una aplicación JavaScript `random-walk.js` que muestre una camino aleatorio que comience en el centro de
+### Aplicación Random Walk
+En esta práctica se propone desarrollar una aplicación JavaScript que muestre una camino aleatorio que comience en el centro de
 un Canvas de forma rectangular que abarque la mayor parte del viewport del naveador y finalice cuando el
 camino alcance cualquiera de los bordes del canvas.
 
-* Antes de comenzar a dibujar el camino aleatorio, 
-el programa mostrará en el lienzo una cuadrícula con una determinada densidad (número de intersecciones).
-Esta [figura](https://raw.githubusercontent.com/fsande/PAI-P09-RandomWalk/master/random-walk.png)  
-muestra ejemplos de caminos aleatorios dibujados sobre retículas de diferente densidad.
+El programa mostrará en el lienzo una cuadrícula con una determinada densidad (número de intersecciones).
 
-* El camino aleatorio (tal como muestra la [figura](https://raw.githubusercontent.com/fsande/PAI-P09-RandomWalk/master/random-walk.png)) 
-se dibujará de modo que sólo recorre líneas de la cuadrícula (no se pueden trazar líneas de forma arbitraria en el lienzo).
+La Figura \ref{fig} muestra ejemplos de caminos aleatorios dibujados sobre retículas de diferente densidad.
 
-* La aplicación estará preparada para dibujar en pantalla cuadrículas con alta densidad (digamos del orden de $100 \times 100$
+El camino aleatorio (como muestra la Figura \ref{fig}) se dibujará de modo que sólo recorre líneas de la cuadrícula 
+(no se pueden trazar líneas de forma arbitraria en la ventana).
+
+\subsection{Consideraciones} 
+El programa se diseñará de tal modo que al ejecutarse, la retícula sobre la que se dibuja el camino ocupe 
+toda (o la mayor parte) de la pantalla.
+
+La aplicación estará preparada para dibujar en pantalla cuadrículas con alta densidad (digamos del orden de $100 \times 100$
 puntos en la cuadrícula, o incluso superior).
 
-Se deja libertad para cada estudiante diseñe la página en la que se embebe el lienzo (canvas) de la manera que
-prefiera, pero la aplicación deberá al menos contemplar las especificaciones solicitadas en este documento.
-El diseño del HTML de esa página brinda una oportunidad para practicar los elementos HTML que se han estudiado hasta ahora.
-No se pretende que utilicen elementos CSS no estudiados hasta esta fecha.
+Se deja libertad para cada uno de ustedes añada botones y/o controles adicionales a los propuestos, pero
+la aplicación deberá al menos contemplar las especificaciones solicitadas en este documento.
 
-Se sugiere que, debajo del canvas la página muestre
-* Un breve texto explicativo de lo que es un camino aleatorio
-* Enlaces a páginas de referencia que se hayan utilizado para realizar este trabajo.
-* Cualquier elemento que les parezca oportuno e interesante.
+### Ejercicios
