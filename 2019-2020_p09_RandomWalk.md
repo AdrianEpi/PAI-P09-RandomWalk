@@ -14,8 +14,8 @@ Los objetivos de esta práctica son:
 Se señalan a continuación los aspectos más relevantes (la lista no es exhaustiva)
 que se tendrán en cuenta a la hora de evaluar este ejercicio:
 * El comportamiento del programa debe ajustarse a lo solicitado en este enunciado.
-* El programa debe ajustarse al paradigma de Orientación a Objetos.
-* Se tendrán en cuenta los sucesivos avances en el mismo que se reflejan a través de los *commits* efectuados al repositorio del proyecto.
+* El programa debe ajustarse al paradigma de Orientación a Objetos: identifique en el problema propuesto clases, objetos y métodos que permitan resolver el problema siguiedo este paradigma.
+* Se tendrán en cuenta los sucesivos avances en el proyecto que han de reflejarse a través de las sucesivos progresos (*commits*) efectuados al repositorio del proyecto.
 * Deben usarse estructuras de datos adecuadas para representar los diferentes elementos que intervienen en el problema.
 * Se valorará la capacidad del programador(a) de introducir cambios en el programa desarrollado.
 * Han de aportarse los tests utilizados para probar la aplicación en su fase de desarrollo.
@@ -31,8 +31,8 @@ mantenga acotada.
 ### Presentación de resultados y ejecución de la aplicación
 **Comience su trabajo** subiendo a la tarea correspondiente del aula virtual de la asignatura el enlace (git) a su repositorio privado de trabajo para esta práctica.
 
-Toda la información que sigue:
-* Ejecución de la aplicación (Enlace `Random Walk`)
+Toda la información que sigue (se indica el texto de cada uno de los enlaces):
+* Ejecución de la aplicación (enlace `Random Walk`)
 * Documentación de la aplicación (enlace `Random Walk - Documentación`)
 * Resultados de las pruebas desarrolladas (enlace `Random Walk - Tests`)
 * Informe de cubrimiento de código (enlace `Random Walk - Cubrimiento`)
@@ -67,23 +67,27 @@ camino alcance cualquiera de los bordes del canvas.
 iterando las fases que se definen en esa metodología:
 Red - Green - Refactor - [Integrate] y escribiendo los tests y la documentación de la aplicación al mismo tiempo que desarrolla el código.
 
-* Antes de comenzar a dibujar el camino aleatorio, 
+* Antes de comenzar a dibujar el camino aleatorio (CA), 
 el programa mostrará en el lienzo una cuadrícula con una determinada densidad (número de intersecciones).
 Esta [figura](https://raw.githubusercontent.com/fsande/PAI-P09-RandomWalk/master/random-walk.png)  
 muestra ejemplos de caminos aleatorios dibujados sobre retículas de diferente densidad.
 
-* El camino aleatorio (tal como muestra la [figura](https://raw.githubusercontent.com/fsande/PAI-P09-RandomWalk/master/random-walk.png)) 
+* Elija para la cuadrícula inicial una densidad que le parezca apropiada para que el comportamiento del programa sea atractivo a un usuario final.
+
+* El CA comenzará a dibujarse automáticamente una vez cagada la página en el navegador, sin esperar por ninguna interacción por parte del usuario.
+
+* El CA (tal como muestra la [figura](https://raw.githubusercontent.com/fsande/PAI-P09-RandomWalk/master/random-walk.png)) 
 se dibujará de modo que sólo recorre líneas de la cuadrícula (no se pueden trazar líneas de forma arbitraria en el lienzo).
 
-* La aplicación estará preparada para dibujar en pantalla cuadrículas con alta densidad (digamos del orden de $100 \times 100$
-puntos en la cuadrícula, o incluso superior).
+* El CA se irá dibujando segmento a segmento, partiendo del centro del lienzo y dejando trancurrir 0,5 segundos entre el dibujo de un segmento y el siguiente que se dibuje.
 
-Se deja libertad para cada estudiante diseñe la página en la que se embebe el lienzo (canvas) de la manera que
-prefiera, pero la aplicación deberá al menos contemplar las especificaciones solicitadas en este documento.
+Se deja libertad para cada que cada autor/a diseñe la página HTML en la que se embebe el lienzo (canvas) de la manera que
+prefiera, pero la aplicación deberá al menos contemplar las especificaciones contempladas en este documento.
 El diseño del HTML de esa página brinda una oportunidad para practicar los elementos HTML que se han estudiado hasta ahora.
-No se pretende que utilicen elementos CSS no estudiados hasta esta fecha.
+No se pretende que se utilicen elementos CSS o HTML no estudiados hasta esta fecha.
 
 Se sugiere que, debajo del canvas la página muestre
 * Un breve texto explicativo de lo que es un camino aleatorio
 * Enlaces a páginas de referencia que se hayan utilizado para realizar este trabajo.
 * Cualquier elemento que les parezca oportuno e interesante.
+Para visualizar esa información habría que desplazarse (*scroll*) en la página puesto que la vista inicial de la misma debiera estar ocupada en su mayor parte por el lienzo que muestra el camino aleatorio.
