@@ -62,6 +62,8 @@ En esta práctica se propone desarrollar una aplicación JavaScript `random-walk
 un Canvas de forma rectangular que abarque la mayor parte del viewport del naveador y finalice cuando el
 camino alcance cualquiera de los bordes del canvas.
 
+* Utilice en el desarrollo de la aplicación un enfoque orientado a objetos: identifique clases, objetos y métodos para resolver el problema propuesto. Utilice alguna herramienta para generar un diagrama UML que represente las clases que utiliza su programa y muestre ese diagrama en una página indexada en `index.html`.
+
 * En el desarrollo de la aplicación que se propone, aplique el
 [enfoque TDD](https://en.wikipedia.org/wiki/Test-driven_development) 
 iterando las fases que se definen en esa metodología:
